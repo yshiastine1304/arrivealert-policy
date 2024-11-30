@@ -3,107 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - ArriveAlert</title>
+    <title>ArriveAlert: Destination Notifier App Security Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .signature {
+            margin-top: 40px;
+            font-weight: bold;
+        }
+        .approval {
+            margin-top: 20px;
+            text-align: right;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Privacy Policy for ArriveAlert</h1>
-        <p><strong>Effective Date:</strong> [December 2024]</p>
-    </header>
+    <h1>ArriveAlert: Destination Notifier App Security Policy</h1>
+    <p><strong>Effective Date:</strong> December 2, 2024</p>
 
-    <section>
-        <p>Thank you for using the ArriveAlert app! We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application ("ArriveAlert," "we," "our," or "us").</p>
+    <div class="section">
+        <h2>Policy Statement</h2>
+        <p>ArriveAlert is committed to ensuring the confidentiality, integrity, and availability of user data. This policy outlines the practices and responsibilities to protect user authentication, shared locations, and destination data from unauthorized access, breaches, and vulnerabilities.</p>
+    </div>
 
-        <p>By using ArriveAlert, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
-    </section>
+    <div class="section">
+        <h2>Scope</h2>
+        <p>This policy applies to all users, developers, and third-party integrations (e.g., Firebase, Google Maps API) used within the ArriveAlert application.</p>
+    </div>
 
-    <section>
-        <h2>Information We Collect</h2>
-        <p>We collect different types of information in order to provide and improve our service to you. The data we collect includes:</p>
-
-        <h3>Personal Information</h3>
+    <div class="section">
+        <h2>Security Objectives</h2>
         <ul>
-            <li><strong>Location Data:</strong> We access your device’s GPS location to provide real-time alerts when you are approaching your destination. This data may be collected in the background even when the app is not actively in use.</li>
-            <li><strong>Location Permission:</strong> You will be prompted to allow location permissions when using the app. You can choose to enable or disable this feature through your device’s settings at any time.</li>
+            <li>Ensure user data, including authentication tokens and shared locations, is kept confidential.</li>
+            <li>Protect against unauthorized access to user locations or credentials.</li>
+            <li>Comply with industry best practices for data encryption and secure storage.</li>
+            <li>Educate developers and testers on secure coding practices.</li>
         </ul>
+    </div>
 
-        <h3>Usage Data</h3>
+    <div class="section">
+        <h2>Responsibilities</h2>
+        <h3>Management</h3>
         <ul>
-            <li><strong>App Usage Information:</strong> We collect information about how you interact with the app, including features you use, time spent in the app, and technical data such as your device type and operating system.</li>
-            <li><strong>Search History:</strong> If enabled, we may collect information about the destinations you search for and set as alerts. This allows you to quickly access recent locations.</li>
+            <li>Ensure that all security measures are implemented during the app’s development.</li>
+            <li>Allocate resources for regular security reviews and updates.</li>
         </ul>
-
-        <h3>Other Information</h3>
+        <h3>Developers</h3>
         <ul>
-            <li><strong>Device Information:</strong> Information such as your device model, operating system version, and unique device identifiers may be collected automatically.</li>
-            <li><strong>App Settings:</strong> Settings such as vibration alerts, notification preferences, and chosen units for distance (e.g., kilometers or meters) are stored to personalize your experience.</li>
+            <li>Encrypt sensitive user data, such as locations and authentication tokens.</li>
+            <li>Conduct security testing to identify and mitigate vulnerabilities.</li>
+            <li>Implement strong access control mechanisms for the database and app features.</li>
         </ul>
-    </section>
+    </div>
 
-    <section>
-        <h2>How We Use Your Information</h2>
-        <p>The information we collect is used for various purposes, including:</p>
+    <div class="section">
+        <h2>Access Control</h2>
+        <h3>Authentication</h3>
         <ul>
-            <li><strong>Providing the Service:</strong> To offer accurate location-based notifications and alerts when you are approaching your destination.</li>
-            <li><strong>Improving the App:</strong> To enhance the user experience, fix bugs, and optimize features based on your usage patterns.</li>
-            <li><strong>Personalization:</strong> To customize your settings and preferences, such as units for measurement or vibration alerts.</li>
-            <li><strong>Communication:</strong> To send you important updates, app-related notifications, or support messages regarding your usage of the app.</li>
+            <li>Use Firebase Authentication for secure Google and Facebook logins.</li>
+            <li>Require multi-factor authentication (MFA) for sensitive operations, if feasible.</li>
         </ul>
-    </section>
-
-    <section>
-        <h2>How We Share Your Information</h2>
-        <p>We respect your privacy and do not share your personal information with third parties, except as follows:</p>
+        <h3>User Permissions</h3>
         <ul>
-            <li><strong>With Your Consent:</strong> We may share your information with third parties if you give us explicit consent.</li>
-            <li><strong>Service Providers:</strong> We may employ third-party companies and individuals to facilitate the operation of the app, provide services on our behalf, or assist in analyzing how the app is used. These third parties have access to your information only to perform these tasks and are obligated not to disclose or use it for any other purpose.</li>
-            <li><strong>Legal Requirements:</strong> We may disclose your information if required by law or in response to legal requests (e.g., to comply with a court order or governmental inquiry).</li>
+            <li>Only allow users to access their own location and shared data.</li>
+            <li>Restrict admin-level access to developers for debugging and support purposes.</li>
         </ul>
-    </section>
+    </div>
 
-    <section>
-        <h2>Security of Your Information</h2>
-        <p>We take the security of your personal information seriously. We employ reasonable technical and organizational measures to protect your data from unauthorized access, alteration, disclosure, or destruction. However, please be aware that no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
-    </section>
-
-    <section>
-        <h2>Your Data Protection Rights</h2>
-        <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+    <div class="section">
+        <h2>Data Protection</h2>
+        <h3>Encryption</h3>
         <ul>
-            <li><strong>Access:</strong> You have the right to request copies of your personal data.</li>
-            <li><strong>Rectification:</strong> You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.</li>
-            <li><strong>Erasure:</strong> You have the right to request that we erase your personal data, under certain conditions.</li>
-            <li><strong>Restriction of Processing:</strong> You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
-            <li><strong>Data Portability:</strong> You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+            <li>Encrypt data during transmission using HTTPS and Firebase’s built-in encryption mechanisms.</li>
+            <li>Encrypt sensitive fields (e.g., location coordinates) in the database.</li>
         </ul>
-        <p>If you wish to exercise any of these rights, please contact us at <strong>[insert contact email]</strong>.</p>
-    </section>
+        <h3>Backup</h3>
+        <ul>
+            <li>Implement automated backups for user-shared locations and settings in Firebase.</li>
+        </ul>
+    </div>
 
-    <section>
-        <h2>Location Data</h2>
-        <p>When you use the ArriveAlert app, we collect location data to provide real-time destination alerts. This data is processed in real-time and may also be stored to improve app functionality, such as search history or for troubleshooting purposes. You can disable location tracking at any time by adjusting your device’s location settings, though certain features may no longer work as intended.</p>
-    </section>
+    <div class="section">
+        <h2>Incident Response</h2>
+        <h3>Detection</h3>
+        <ul>
+            <li>Use Firebase monitoring tools to detect anomalies, such as unauthorized access attempts.</li>
+        </ul>
+        <h3>Response</h3>
+        <ul>
+            <li>Immediately revoke compromised authentication tokens.</li>
+            <li>Notify affected users and secure impacted systems.</li>
+        </ul>
+        <h3>Recovery</h3>
+        <ul>
+            <li>Review the incident and implement measures to prevent recurrence.</li>
+        </ul>
+    </div>
 
-    <section>
-        <h2>Data Retention</h2>
-        <p>We will retain your personal data only for as long as necessary for the purposes set out in this Privacy Policy. If you choose to stop using the app or delete your account, we will retain and use your personal data to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our agreements.</p>
-    </section>
+    <div class="section">
+        <h2>Training and Awareness</h2>
+        <p>Developers must follow security best practices, such as:</p>
+        <ul>
+            <li>Avoiding hard-coded credentials.</li>
+            <li>Using Firebase’s rules for database access.</li>
+        </ul>
+    </div>
 
-    <section>
-        <h2>Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy from time to time. Any changes will be reflected by updating the "Effective Date" at the top of this page. We encourage you to review this Privacy Policy periodically for any updates. By continuing to use the app after any changes to this Privacy Policy, you accept those changes.</p>
-    </section>
+    <div class="section">
+        <h2>Compliance</h2>
+        <p>Align with:</p>
+        <ul>
+            <li>Firebase security standards.</li>
+            <li>Google Maps API terms of service.</li>
+            <li>Applicable data privacy laws, like GDPR, if targeting users in specific regions.</li>
+        </ul>
+    </div>
 
-    <section>
-        <h2>Contact Us</h2>
-        <p>If you have any questions or concerns about this Privacy Policy or the handling of your personal data, please contact us at:</p>
-        <p><strong>ArriveAlert Team</strong><br>
-        Email: <a href="mailto:[arrivealert24@gmail.com]">[arrivealert24@gmail.com]</a><br>
-        </p>
-    </section>
+    <div class="section">
+        <h2>Enforcement</h2>
+        <p>Violations of this policy by developers or testers may result in revocation of access rights or legal consequences.</p>
+    </div>
 
-    <footer>
-        <p>This Privacy Policy was last updated on [November 2024].</p>
-    </footer>
+    <div class="section">
+        <h2>Review and Revision</h2>
+        <p>This policy will be reviewed annually or after any security incident to ensure its effectiveness.</p>
+    </div>
+
+    <div class="approval">
+        <p><strong>Approval:</strong></p>
+        <p>ABRAHEM P. ANQUI</p>
+        <p>Capstone Advisor</p>
+        <p>November 29, 2024</p>
+    </div>
 </body>
 </html>
